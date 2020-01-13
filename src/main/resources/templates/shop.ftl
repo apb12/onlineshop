@@ -1,6 +1,7 @@
 <#import "parts/common.ftl" as c>
 <@c.page>
 
+<#if items??>
 <table class="table">
     <thead>
     <tr>
@@ -25,4 +26,5 @@
     </#list>
     </tbody>
 </table>
+</#if>
 </@c.page>

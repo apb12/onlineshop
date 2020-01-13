@@ -22,5 +22,10 @@ public class Item {
     @OneToMany(mappedBy = "item")
     private List<Purchase>purchases;
 
-
+    @Override
+    public String toString() {
+        return "Item{" +
+                "name='" + name + '\'' +
+                '}';
+    }
 }
