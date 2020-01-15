@@ -21,7 +21,7 @@
         <td>${l.hdd}</td>
         <td>${l.proc}</td>
         <td>${l.price}</td>
-        <td><a href="/shop/${l.id}">купить</a> </td>
+        <td><a href="/shop/${l.id?c}">купить</a> </td>
     </tr>
     </#list>
     </tbody>

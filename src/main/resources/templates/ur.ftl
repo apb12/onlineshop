@@ -15,6 +15,8 @@
         <th scope="col">Товар</th>
         <th scope="col">Количество</th>
         <th scope="col">Цена</th>
+        <th scope="col">Редактировать</th>
+        <th scope="col">Удалить</th>
     </tr>
     </thead>
     <tbody>
@@ -24,6 +26,8 @@
         <td>${p.item.name}</td>
         <td>${p.count}</td>
         <td>${p.amount}</td>
+        <td><a href="/edit/${p.id?c}">Редактировать</a> </td>
+        <td><a href="/delete/${p.id?c}">Удалить</a> </td>
     </tr>
     </#list>
     </tbody>
